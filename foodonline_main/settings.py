@@ -143,3 +143,18 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
    
 }
+
+# Email configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ProCareAdvocates@gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_PASSWORD ='kuyqmgzrooztijgt'
+EMAIL_USE_TLS = True
+# Default emulator below - changes the From: in email.
+DEFAULT_FROM_EMAIL = 'Food Online Marketplace <ProCareAdvocates@gmail.com>'
+
+# EMAIL_HOST=smtp.gmail.com
+# EMAIL_PORT=587
+# EMAIL_HOST_USER=django.procareadvocates@gmail.com
+# EMAIL_HOST_PASSWORD = ('kuyqmgzrooztijgt')
