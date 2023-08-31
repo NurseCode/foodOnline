@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'accounts.context_processors.get_vendor',
+                'accounts.context_processors.get_google_api',
             ],
         },
     },
@@ -155,7 +156,4 @@ EMAIL_USE_TLS = True
 # Default emulator below - changes the From: in email.
 DEFAULT_FROM_EMAIL = 'Food Online Marketplace <ProCareAdvocates@gmail.com>'
 
-# EMAIL_HOST=smtp.gmail.com
-# EMAIL_PORT=587
-# EMAIL_HOST_USER=django.procareadvocates@gmail.com
-# EMAIL_HOST_PASSWORD = ('kuyqmgzrooztijgt')
+GOOGLE_API_KEY = 'AIzaSyD1b_B4srRgNmnqxz525eT188JNKWTP7Ng'
