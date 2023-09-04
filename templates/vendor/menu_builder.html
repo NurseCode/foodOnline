@@ -20,9 +20,10 @@
 									<h5 class="text-uppercase">Build your item menu</h5>
                                     <hr>
                                     <h6>Menu Categories</h6>
+                                    {% if categories %}
                                 
-                                <a href="#" class="btn btn-success float-right m-1">&nbsp;<i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add Item</a>
-                                <a href="{% url 'add_category' %}" class="btn btn-info float-right m-1">&nbsp;<i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add Category</a>
+                                    <a href="{% url 'add_ProductItem' %}" class="btn btn-success float-right m-1">&nbsp;<i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add Product Item</a>
+                                    <a href="{% url 'add_category' %}" class="btn btn-info float-right m-1">&nbsp;<i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Add Category</a>
                                     <table class="table table-hover table-borderless table-striped">
                                         <tbody>
                                         {% for cat in categories %}
@@ -39,6 +40,13 @@
                                         {% endfor %}
                                         </tbody>
                                     </table>
+                                    {% else %}
+
+                                        <h5 class= "text-center">No categories found.</h5>
+                                        <div class="text-center"><a href="{% url 'add_category' %}" class="btn btn-success">&nbsp;<i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Category</a></div>
+
+                                    {% endif %}
+
 
 								</div>
 							</div>

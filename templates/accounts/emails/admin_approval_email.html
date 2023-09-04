@@ -1,0 +1,12 @@
+{% autoescape off %}
+
+Hi {{user.first_name}}, 
+
+{% if is_approved%},
+Congratulations! You have been approved to use Marketplace!
+{% else %}.
+We're sorry! You are not currently eligible to publish items to the Marketplace. For more details, please contact support at support@foodOnline.com -- foodOnline
+{% endif %}
+
+
+{% endautoescape %}

@@ -15,8 +15,8 @@ urlpatterns = [
     path('menu-builder/category/delete/<int:pk>/', views.delete_category, name='delete_category'),
     
     # Product Item CRUD
-    # path('menu-builder/productItem/add/', views.add_item, name='add_productItem'),
-    # path('menu-builder/productItem/edit/<int:pk>/', views.edit_item, name='edit_productItem'),
-    # path('menu-builder/productItem/delete/<int:pk>/', views.delete_item, name='delete_productItem'),
+    path('menu-builder/productItem/add/', views.add_ProductItem, name='add_ProductItem'),
+    path('menu-builder/edit_product/edit/<int:pk>/', views.edit_product, name='edit_product'),
+    path('menu-builder/product/delete/<int:pk>/', views.delete_product, name='delete_product'),
 ]
 
